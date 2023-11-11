@@ -12,7 +12,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    nav{
+    nav {
       position: fixed;
       bottom: 0;
       left: 0;
@@ -21,23 +21,26 @@
       background-color: blueviolet;
       color: white;
     }
-    nav{
+
+    nav {
       padding: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .hamburger{
+
+    .hamburger {
       width: 50px;
       height: 50px;
     }
-    .line{
+
+    .line {
       width: 100%;
       height: 3px;
       background-color: white;
       margin: 10px 0;
     }
-    
+
     body {
       padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
       --sat: env(safe-area-inset-top);
@@ -58,7 +61,13 @@
         <div class="line"></div>
       </div>
     </nav>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, velit. Harum dolore autem, doloremque explicabo laborum, ab inventore animi delectus officia, deleniti beatae aspernatur nam quos. Sit ut consequatur distinctio explicabo dolores quaerat rerum architecto ea soluta eos aliquid debitis omnis, quos quas? Veritatis unde quod officia porro consectetur placeat quam soluta? Distinctio, voluptas obcaecati delectus, tempora alias eum, non id expedita possimus laudantium illum repellendus quas neque sunt. Vel, consequuntur! Voluptas amet aliquid sunt? Quis saepe voluptas numquam nesciunt facilis. Enim, veritatis doloribus quod vel corporis magnam tempora repellat quae rerum vero, exercitationem earum similique atque consequatur ea cum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, velit. Harum dolore autem, doloremque explicabo
+      laborum, ab inventore animi delectus officia, deleniti beatae aspernatur nam quos. Sit ut consequatur distinctio
+      explicabo dolores quaerat rerum architecto ea soluta eos aliquid debitis omnis, quos quas? Veritatis unde quod
+      officia porro consectetur placeat quam soluta? Distinctio, voluptas obcaecati delectus, tempora alias eum, non id
+      expedita possimus laudantium illum repellendus quas neque sunt. Vel, consequuntur! Voluptas amet aliquid sunt?
+      Quis saepe voluptas numquam nesciunt facilis. Enim, veritatis doloribus quod vel corporis magnam tempora repellat
+      quae rerum vero, exercitationem earum similique atque consequatur ea cum!</p>
     <div id="test">
       <div>
         top:
@@ -77,27 +86,41 @@
         <span id="bottom"></span>
       </div>
     </div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, velit. Harum dolore autem, doloremque explicabo laborum, ab inventore animi delectus officia, deleniti beatae aspernatur nam quos. Sit ut consequatur distinctio explicabo dolores quaerat rerum architecto ea soluta eos aliquid debitis omnis, quos quas? Veritatis unde quod officia porro consectetur placeat quam soluta? Distinctio, voluptas obcaecati delectus, tempora alias eum, non id expedita possimus laudantium illum repellendus quas neque sunt. Vel, consequuntur! Voluptas amet aliquid sunt? Quis saepe voluptas numquam nesciunt facilis. Enim, veritatis doloribus quod vel corporis magnam tempora repellat quae rerum vero, exercitationem earum similique atque consequatur ea cum!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, velit. Harum dolore autem, doloremque explicabo laborum, ab inventore animi delectus officia, deleniti beatae aspernatur nam quos. Sit ut consequatur distinctio explicabo dolores quaerat rerum architecto ea soluta eos aliquid debitis omnis, quos quas? Veritatis unde quod officia porro consectetur placeat quam soluta? Distinctio, voluptas obcaecati delectus, tempora alias eum, non id expedita possimus laudantium illum repellendus quas neque sunt. Vel, consequuntur! Voluptas amet aliquid sunt? Quis saepe voluptas numquam nesciunt facilis. Enim, veritatis doloribus quod vel corporis magnam tempora repellat quae rerum vero, exercitationem earum similique atque consequatur ea cum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, velit. Harum dolore autem, doloremque explicabo
+      laborum, ab inventore animi delectus officia, deleniti beatae aspernatur nam quos. Sit ut consequatur distinctio
+      explicabo dolores quaerat rerum architecto ea soluta eos aliquid debitis omnis, quos quas? Veritatis unde quod
+      officia porro consectetur placeat quam soluta? Distinctio, voluptas obcaecati delectus, tempora alias eum, non id
+      expedita possimus laudantium illum repellendus quas neque sunt. Vel, consequuntur! Voluptas amet aliquid sunt?
+      Quis saepe voluptas numquam nesciunt facilis. Enim, veritatis doloribus quod vel corporis magnam tempora repellat
+      quae rerum vero, exercitationem earum similique atque consequatur ea cum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, velit. Harum dolore autem, doloremque explicabo
+      laborum, ab inventore animi delectus officia, deleniti beatae aspernatur nam quos. Sit ut consequatur distinctio
+      explicabo dolores quaerat rerum architecto ea soluta eos aliquid debitis omnis, quos quas? Veritatis unde quod
+      officia porro consectetur placeat quam soluta? Distinctio, voluptas obcaecati delectus, tempora alias eum, non id
+      expedita possimus laudantium illum repellendus quas neque sunt. Vel, consequuntur! Voluptas amet aliquid sunt?
+      Quis saepe voluptas numquam nesciunt facilis. Enim, veritatis doloribus quod vel corporis magnam tempora repellat
+      quae rerum vero, exercitationem earum similique atque consequatur ea cum!</p>
 
-   
-    <script>window.onload = () => {
-        document.querySelector("#top").innerText = getComputedStyle(
-          document.body
-        ).getPropertyValue("--sat");
+    <script>
+      setInterval(() => {
+        () => {
+          document.querySelector("#top").innerText = getComputedStyle(
+            document.body
+          ).getPropertyValue("--sat");
 
-        document.querySelector("#left").innerText = getComputedStyle(
-          document.body
-        ).getPropertyValue("--sal");
+          document.querySelector("#left").innerText = getComputedStyle(
+            document.body
+          ).getPropertyValue("--sal");
 
-        document.querySelector("#right").innerText = getComputedStyle(
-          document.body
-        ).getPropertyValue("--sar");
+          document.querySelector("#right").innerText = getComputedStyle(
+            document.body
+          ).getPropertyValue("--sar");
 
-        document.querySelector("#bottom").innerText = getComputedStyle(
-          document.body
-        ).getPropertyValue("--sab");
-      };
+          document.querySelector("#bottom").innerText = getComputedStyle(
+            document.body
+          ).getPropertyValue("--sab");
+        }
+      }, 1000);
     </script>
 
   </body>
