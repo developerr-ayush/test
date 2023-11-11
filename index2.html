@@ -53,6 +53,12 @@
             --sab: env(safe-area-inset-bottom);
             --sal: env(safe-area-inset-left);
         }
+
+        @media (horizontal-viewport-segments: 2) {
+            body {
+                background-color: green;
+            }
+        }
     </style>
 
     <body>
