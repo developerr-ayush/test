@@ -106,7 +106,7 @@
             consequatur ea cum!</p>
 
         <script>
-            setInterval(() => {
+            setInterval(
                 () => {
                     document.querySelector("#top").innerText = getComputedStyle(
                         document.body
@@ -123,8 +123,8 @@
                     document.querySelector("#bottom").innerText = getComputedStyle(
                         document.body
                     ).getPropertyValue("--sab");
-                }
-            }, 1000);
+
+                }, 1000);
         </script>
     </body>
 

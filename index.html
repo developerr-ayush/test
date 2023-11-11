@@ -101,26 +101,26 @@
       Quis saepe voluptas numquam nesciunt facilis. Enim, veritatis doloribus quod vel corporis magnam tempora repellat
       quae rerum vero, exercitationem earum similique atque consequatur ea cum!</p>
 
-    <script>
-      setInterval(() => {
-        () => {
-          document.querySelector("#top").innerText = getComputedStyle(
-            document.body
-          ).getPropertyValue("--sat");
+      <script>
+        setInterval(
+            () => {
+                document.querySelector("#top").innerText = getComputedStyle(
+                    document.body
+                ).getPropertyValue("--sat");
 
-          document.querySelector("#left").innerText = getComputedStyle(
-            document.body
-          ).getPropertyValue("--sal");
+                document.querySelector("#left").innerText = getComputedStyle(
+                    document.body
+                ).getPropertyValue("--sal");
 
-          document.querySelector("#right").innerText = getComputedStyle(
-            document.body
-          ).getPropertyValue("--sar");
+                document.querySelector("#right").innerText = getComputedStyle(
+                    document.body
+                ).getPropertyValue("--sar");
 
-          document.querySelector("#bottom").innerText = getComputedStyle(
-            document.body
-          ).getPropertyValue("--sab");
-        }
-      }, 1000);
+                document.querySelector("#bottom").innerText = getComputedStyle(
+                    document.body
+                ).getPropertyValue("--sab");
+
+            }, 1000);
     </script>
 
   </body>
