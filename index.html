@@ -1,55 +1,69 @@
-<style>div {
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: bold;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-#test {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
-}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
 
-body {
-  height: 100vh;
-  --sat: env(safe-area-inset-top);
-  --sar: env(safe-area-inset-right);
-  --sab: env(safe-area-inset-bottom);
-  --sal: env(safe-area-inset-left);
-}
-</style>
-<div id="test">
-  <div>
-    top:
-    <span id="top"></span>
-  </div>
-  <div>
-    left:
-    <span id="left"></span>
-  </div>
-  <div>
-    right:
-    <span id="right"></span>
-  </div>
-  <div>
-    bottom:
-    <span id="bottom"></span>
-  </div>
-</div>
-<script>window.onload = () => {
-  document.querySelector("#top").innerText = getComputedStyle(
-    document.body
-  ).getPropertyValue("--sat");
+  <body>
+    <style>
+      div {
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: bold;
+      }
 
-  document.querySelector("#left").innerText = getComputedStyle(
-    document.body
-  ).getPropertyValue("--sal");
+      #test {
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      }
 
-  document.querySelector("#right").innerText = getComputedStyle(
-    document.body
-  ).getPropertyValue("--sar");
+      body {
+        height: 100vh;
+        --sat: env(safe-area-inset-top);
+        --sar: env(safe-area-inset-right);
+        --sab: env(safe-area-inset-bottom);
+        --sal: env(safe-area-inset-left);
+      }
+    </style>
+    <div id="test">
+      <div>
+        top:
+        <span id="top"></span>
+      </div>
+      <div>
+        left:
+        <span id="left"></span>
+      </div>
+      <div>
+        right:
+        <span id="right"></span>
+      </div>
+      <div>
+        bottom:
+        <span id="bottom"></span>
+      </div>
+    </div>
+    <script>window.onload = () => {
+        document.querySelector("#top").innerText = getComputedStyle(
+          document.body
+        ).getPropertyValue("--sat");
 
-  document.querySelector("#bottom").innerText = getComputedStyle(
-    document.body
-  ).getPropertyValue("--sab");
-};
-</script>
+        document.querySelector("#left").innerText = getComputedStyle(
+          document.body
+        ).getPropertyValue("--sal");
+
+        document.querySelector("#right").innerText = getComputedStyle(
+          document.body
+        ).getPropertyValue("--sar");
+
+        document.querySelector("#bottom").innerText = getComputedStyle(
+          document.body
+        ).getPropertyValue("--sab");
+      };
+    </script>
+
+  </body>
+
+</html>
